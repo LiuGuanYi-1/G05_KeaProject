@@ -1,0 +1,25 @@
+2025-04-05 21:40:42,913 - INFO - delete: D:\Kea-main\Kea-main\example\working_dir
+2025-04-06 12:09:13,883 - INFO - decompiling: com.amaze.filemanager, 2/2 dex files
+2025-04-06 12:14:07,378 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:14:07,494 - INFO - decompiling: com.amaze.filemanager, 2/2 dex files
+2025-04-06 12:14:19,278 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:14:19,380 - INFO - decompiling: com.amaze.filemanager, 2/2 dex files
+2025-04-06 12:14:34,443 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:14:34,539 - INFO - decompiling: it.feio.android.omninotes.alpha, 1/1 dex files
+2025-04-06 12:17:10,121 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:17:10,372 - INFO - decompiling: com.duolingo, 7/7 dex files
+2025-04-06 12:18:50,117 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:18:50,210 - INFO - decompiling: it.feio.android.omninotes, 1/1 dex files
+2025-04-06 12:19:39,828 - INFO - delete: D:\\Kea-main\\Kea-main\\example\\working_dir
+2025-04-06 12:19:39,890 - INFO - decompiling: it.feio.android.omninotes, 1/1 dex files
+2025-04-06 12:20:33,941 - INFO - decompiling: it.feio.android.omninotes, 1/1 dex files
+2025-04-06 12:20:39,125 - INFO - saving instrumented smali: C:\Users\11621\acvtool\acvtool_working_dir\apktool\classes
+2025-04-06 12:20:44,177 - INFO - pickle file saved: C:\Users\11621\acvtool\acvtool_working_dir\pickles\it.feio.android.omninotes_1.pickle
+2025-04-06 12:20:44,203 - INFO - dex fields 17085, acv fields 3461
+2025-04-06 12:20:44,265 - INFO - instrumented
+2025-04-06 12:20:48,493 - INFO - built dex file: C:\Users\11621\acvtool\acvtool_working_dir\apktool\classes.dex
+2025-04-06 12:20:48,661 - INFO - built dex file: C:\Users\11621\acvtool\acvtool_working_dir\apktool\classes2.dex
+2025-04-06 12:20:48,661 - INFO - patching apk...
+2025-04-06 12:20:49,677 - INFO - apk instrumented: C:\Users\11621\acvtool\acvtool_working_dir\instr_it.feio.android.omninotes.apk
+2025-04-06 12:20:49,677 - INFO - package name: it.feio.android.omninotes
+2025-04-06 12:23:09,706 - INFO - installing instr_it.feio.android.omninotes.apk
