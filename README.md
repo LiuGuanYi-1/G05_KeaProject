@@ -32,8 +32,8 @@ kea -f example/example_property.py -a example/omninotes.apk
 ### Android APP
 Omni-notes, MyExpenses, Amaza File Manager, AntennaPod...
 ### Relevant Tools Used in Kea
-Droidbot(https://github.com/honeynet/droidbot)
-HMDroidbot(https://github.com/ecnusse/HMDroidbot)
-hypothesis(https://github.com/HypothesisWorks/hypothesis)
-hmdriver2(https://github.com/codematrixer/hmdriver2)
+Droidbot(https://github.com/honeynet/droidbot)  
+HMDroidbot(https://github.com/ecnusse/HMDroidbot)  
+hypothesis(https://github.com/HypothesisWorks/hypothesis)  
+hmdriver2(https://github.com/codematrixer/hmdriver2)  
 uiautomator2(https://github.com/openatx/uiautomator2)
