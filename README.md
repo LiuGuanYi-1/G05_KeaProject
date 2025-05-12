@@ -1,6 +1,6 @@
 # G05_KeaProject
 **软件开发第五组Kea系统代码仓库  
-小组成员：王齐天，贾昌寒，赵宇凡**
+小组成员：王齐天，贾昌寒，赵宇帆**
 ## Intro(概要介绍)
 Kea is a general and practical testing tool based on the idea of property-based testing for finding functional (logic) bugs in mobile (GUI) apps. Kea currently supports Android and HarmonyOS.
 This project has optimized and enhanced the large model guidance path traversal strategy (LLMPolicy) for Kea, with the main tasks including:
