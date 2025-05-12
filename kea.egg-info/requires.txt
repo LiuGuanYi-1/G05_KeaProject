@@ -1,0 +1,12 @@
+networkx
+Pillow
+uiautomator2==3.2.2
+androguard==4.0.0
+attrs
+opencv-python
+coloredlogs
+hypothesis
+hmdriver2
+pyyaml
+openai
+rtree
