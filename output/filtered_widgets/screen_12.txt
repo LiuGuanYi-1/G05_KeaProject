@@ -1,0 +1,8 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.Switch[resource_id]org.totschnig.myexpenses.debug:id/TaType[text]−[enabled,,][bounds][[419, 485], [556, 611]]
+[class]android.widget.EditText[resource_id]org.totschnig.myexpenses.debug:id/AmountEditText[text]None[enabled,,][bounds][[556, 485], [1247, 611]]
+[class]android.widget.ImageView[resource_id]org.totschnig.myexpenses.debug:id/Calculator[text]None[enabled,,][bounds][[1247, 485], [1374, 611]]
+[class]android.widget.Button[resource_id]android:id/button1[text]OK[enabled,,][bounds][[1185, 669], [1353, 795]]

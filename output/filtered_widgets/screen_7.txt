@@ -1,0 +1,11 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.EditText[resource_id]org.totschnig.myexpenses.debug:id/Label[text]None[enabled,,][bounds][[105, 776], [975, 923]]
+[class]android.widget.Switch[resource_id]org.totschnig.myexpenses.debug:id/TaType[text]+[enabled,checked,][bounds][[105, 1029], [231, 1155]]
+[class]android.widget.EditText[resource_id]org.totschnig.myexpenses.debug:id/AmountEditText[text]None[enabled,,][bounds][[231, 1029], [975, 1155]]
+[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/Currency[text]None[enabled,,][bounds][[105, 1293], [975, 1419]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/MoreOptionsButton[text]More options[enabled,,][bounds][[692, 1419], [975, 1545]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/SetupMain[text]None[enabled,,][bounds][[42, 1646], [169, 1772]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_done[text]Get started[enabled,,][bounds][[728, 1647], [1038, 1773]]

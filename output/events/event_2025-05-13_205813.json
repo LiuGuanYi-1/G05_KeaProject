@@ -1,0 +1,59 @@
+{
+  "tag": "2025-05-13_205813",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 3,
+      "content_description": "New Transaction. New Transfer. New split",
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1605,
+          891
+        ],
+        [
+          1752,
+          1038
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/fab",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ImageButton",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": true,
+      "global_drawing_order": 25,
+      "covered": false,
+      "parent": 7,
+      "temp_id": 25,
+      "size": "147*147",
+      "signature": "[class]android.widget.ImageButton[resource_id]org.totschnig.myexpenses.debug:id/fab[text]None[enabled,,]",
+      "view_str": "f30c87e1c8997a369b12cb34cd8d9875",
+      "content_free_signature": "[class]android.widget.ImageButton[resource_id]org.totschnig.myexpenses.debug:id/fab",
+      "allowed_actions": [
+        "touch",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "10",
+      "desc": "<button text='New Transaction. New Transfer. New split' bound_box=1605,891,1752,1038></button>"
+    }
+  },
+  "start_state": "9193b626849ab2498a87b2fbabe9e15c",
+  "stop_state": "39242009582ca50911191dc60c2da006",
+  "event_str": "TouchEvent(state=9193b626849ab2498a87b2fbabe9e15c, view=f30c87e1c8997a369b12cb34cd8d9875(MyExpenses/ImageButton-))"
+}

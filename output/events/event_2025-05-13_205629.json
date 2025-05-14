@@ -1,0 +1,58 @@
+{
+  "tag": "2025-05-13_205629",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 2,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          807,
+          1647
+        ],
+        [
+          1038,
+          1773
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/suw_navbar_next",
+      "checked": false,
+      "text": "Next",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 23,
+      "covered": false,
+      "parent": 19,
+      "temp_id": 23,
+      "size": "231*126",
+      "signature": "[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_next[text]Next[enabled,,]",
+      "view_str": "67c40c53bededa8b3c2a0ace4cbfe234",
+      "content_free_signature": "[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_next",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "6",
+      "desc": "<button bound_box=807,1647,1038,1773>Next</button>"
+    }
+  },
+  "start_state": "4e5b12341a8a8ac69a549fafca724c06",
+  "stop_state": "bb07a98e8073a1065976eb55fefa844c",
+  "event_str": "TouchEvent(state=4e5b12341a8a8ac69a549fafca724c06, view=67c40c53bededa8b3c2a0ace4cbfe234(OnboardingActivity/Button-Next))"
+}

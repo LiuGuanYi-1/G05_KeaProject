@@ -1,0 +1,77 @@
+{
+  "activity": "Launcher",
+  "children": [
+    {
+      "activity": "com.android.launcher3/.Launcher",
+      "children": [
+        {
+          "activity": "Unknown",
+          "children": [],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": []
+        },
+        {
+          "activity": "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity",
+          "children": [],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": [
+            "RotateToLandscape",
+            "RotateToPortrait",
+            "RotateToLandscape",
+            "Unknown",
+            "touch view without text description",
+            "Touch view with text description : [Search]",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Search]",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Search]",
+            "TextInput : [Open]",
+            "Touch view with text description : [Search online]",
+            "touch view without text description",
+            "Touch view with text description : [Open]",
+            "touch view without text description",
+            "touch view without text description",
+            "TextInput : [Help]",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Configure Home Screen]",
+            "Touch view with text description : [Cancel]",
+            "Unknown",
+            "Unknown",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Always]",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Configure Home Screen]",
+            "Touch view with text description : [OK]",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Configure Home Screen]",
+            "Touch view with text description : [OK]",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description",
+            "Touch view with text description : [Configure Home Screen]"
+          ]
+        }
+      ],
+      "transition_events": [
+        "KillApp"
+      ],
+      "inefficient_events": []
+    }
+  ],
+  "inefficient_events": [],
+  "transition_events": []
+}

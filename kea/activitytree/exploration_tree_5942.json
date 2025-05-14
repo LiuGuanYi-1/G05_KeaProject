@@ -1,0 +1,38 @@
+{
+  "activity": "Launcher",
+  "children": [
+    {
+      "activity": "com.android.launcher3/.Launcher",
+      "children": [
+        {
+          "activity": "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity",
+          "children": [],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": [
+            "touch view without text description",
+            "TextInput : [rm]",
+            "Touch view with text description : [Search online]",
+            "Touch view with text description : [rm]",
+            "touch view without text description",
+            "TextInput : [search]",
+            "touch view without text description",
+            "Touch view with text description : [Search]",
+            "touch view without text description",
+            "touch view without text description",
+            "TextInput : [help]",
+            "touch view without text description",
+            "touch view without text description"
+          ]
+        }
+      ],
+      "transition_events": [
+        "KillApp"
+      ],
+      "inefficient_events": []
+    }
+  ],
+  "inefficient_events": [],
+  "transition_events": []
+}

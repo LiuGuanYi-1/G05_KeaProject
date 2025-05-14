@@ -6,7 +6,9 @@ import sys
 import importlib
 import inspect
 import attr
-from .utils import INITIALIZER_MARKER, MAINPATH_MARKER, RULE_MARKER
+from sqlalchemy import false
+
+from .utils import INITIALIZER_MARKER, MAINPATH_MARKER, RULE_MARKER, LLMTASK_MARKER
 from concurrent.futures import ThreadPoolExecutor
 
 from dataclasses import dataclass
@@ -14,7 +16,7 @@ from typing import Dict, List, TYPE_CHECKING, Optional, Union
 from uiautomator2.exceptions import UiObjectNotFoundError
 
 if TYPE_CHECKING:
-    from .kea_test import Rule, MainPath, KeaTest
+    from .kea_test import Rule, MainPath, KeaTest, LLMTask
     from .android_pdl_driver import Android_PDL_Driver
     from .harmonyos_pdl_driver import HarmonyOS_PDL_Driver
 
@@ -29,16 +31,16 @@ class CHECK_RESULT:
 OUTPUT_DIR = "output"
 
 @attr.s(frozen=True)
-class Rule:    
+class Rule:
     """
     A rule corresponds to a property, including the preconditions, 
     the interaction scenario, the postconditions (in the form of assertions).
     """
     
     # `preconditions` denotes the preconditions annotated with `@precondition`
-    preconditions = attr.ib()  
+    preconditions = attr.ib()
 
-    # `function` denotes the function of @Rule. 
+    # `function` denotes the function of @Rule.
     # This function includes the interaction scenario and the assertions (i.e., the postconditions)
     function = attr.ib()
 
@@ -62,7 +64,37 @@ class MainPath:
     function = attr.ib()
 
     # the interaction steps (events) in the main path
-    path: List[str] = attr.ib()  
+    path: List[str] = attr.ib()
+
+    #修改部分
+@attr.s()
+class LLMTask:
+    """Describes the natural language task of a test script,
+    explaining its purpose and validation objectives."""
+
+    # 自然语言描述的任务目标
+    description = attr.ib()
+    # 被装饰的测试函数
+    function = attr.ib()
+
+class KeaTestElement:
+    def __init__(self):
+        self.rules:List["Rule"] = list()
+        self.initializers:List["Initializer"] = list()
+        self.mainPaths:List["MainPath"] = list()
+        self.llmTasks:List["LLMTask"] = list()
+
+    def add_rule(self, rule: "Rule"):
+        self.rules.append(rule)
+
+    def add_initializer(self, initializer: "Initializer"):
+        self.initializers.append(initializer)
+
+    def add_main_path(self, main_path: "MainPath"):
+        self.mainPaths.append(main_path)
+
+    def add_llm_task(self, llm_task: "LLMTask"):
+        self.llmTasks.append(llm_task)
 
 
 class KeaTestElements:
@@ -71,10 +103,12 @@ class KeaTestElements:
     KeaTestElements cannot be accessed by the users to avoid information leakage.
     """
     def __init__(self, keaTest_name):
-        self.keaTest_name = keaTest_name 
+        self.keaTest_name = keaTest_name
         self.rules:List["Rule"] = list()
         self.initializers:List["Initializer"] = list()
         self.mainPaths:List["MainPath"] = list()
+        self.llmTasks:List["LLMTask"] = list()
+        self.element = KeaTestElement()
 
     def load_rules(self, keaTest:"KeaTest"):
         """
@@ -84,6 +118,7 @@ class KeaTestElements:
             rule = getattr(v, RULE_MARKER, None)
             if rule is not None:
                 self.rules.append(rule)
+                print(inspect.getsource(rule.function).strip().split("\n",1)[0])
 
     def load_initializers(self, keaTest:"KeaTest"):
         """
@@ -102,6 +137,24 @@ class KeaTestElements:
             mainPath = getattr(v, MAINPATH_MARKER, None)
             if mainPath is not None:
                 self.mainPaths.append(mainPath)
+
+    def load_llmTasks(self, keaTest:"KeaTest"):
+        for _, v in inspect.getmembers(keaTest):
+            llmTask = getattr(v, LLMTASK_MARKER, None)
+            if llmTask is not None:
+                self.llmTasks.append(llmTask)
+
+
+    def imp_element(self):
+        self.element.llmTasks = self.llmTasks
+        self.element.mainPaths = self.mainPaths
+        self.element.rules = self.rules
+        self.element.initializers = self.initializers
+
+
+
+
+
 
 class Kea:
     """Kea class
@@ -122,6 +175,7 @@ class Kea:
     def __init__(self):
         self.logger = logging.getLogger(self.__class__.__name__)
         self.thread_executor = ThreadPoolExecutor(max_workers=48)
+        self.tasks_matched = false
 
     @property
     def all_rules(self) -> List["Rule"]:
@@ -167,6 +221,19 @@ class Kea:
         for keaTestElements in self._KeaTest_DB.values():
             all_mainPaths.extend(keaTestElements.mainPaths)
         return all_mainPaths
+
+    def all_llmTasks(self):
+        all_llmTasks = []
+        for keaTestElements in self._KeaTest_DB.values():
+            all_llmTasks.extend(keaTestElements.llmTasks)
+        return all_llmTasks
+
+    def all_ruless(self):
+        all_ruless = []
+        for keaTestElements in self._KeaTest_DB.values():
+            all_ruless.extend(keaTestElements.rules)
+        return all_ruless
+
     
     @classmethod
     def set_pdl_driver(cls, driver:Optional[Union["Android_PDL_Driver", "HarmonyOS_PDL_Driver"]]):
@@ -190,7 +257,7 @@ class Kea:
             # get the absolute path of the property file
             file_abspath = os.path.join(workspace_path, file) if not os.path.isabs(file) else file
             if not os.path.exists(file_abspath):
-                raise FileNotFoundError(f"{file} not exists.") 
+                raise FileNotFoundError(f"{file} not exists.")
             
             module_dir = os.path.dirname(file_abspath)
             
@@ -198,7 +265,7 @@ class Kea:
             if module_dir not in sys.path:
                 sys.path.insert(0, module_dir)
             
-            # dynamically change the workspace to make sure 
+            # dynamically change the workspace to make sure
             # the import of the user properties work correctly
             os.chdir(module_dir)
 
@@ -232,9 +299,11 @@ class Kea:
 
         """
         keaTestElements = cls.init_KeaTestElements(keaTest)
-        keaTestElements.load_initializers(keaTest)        
+        keaTestElements.load_initializers(keaTest)
         keaTestElements.load_rules(keaTest)
         keaTestElements.load_mainPaths(keaTest)
+        keaTestElements.load_llmTasks(keaTest)
+        keaTestElements.imp_element()
 
         if len(keaTestElements.rules) == 0:
             raise Exception(f"No rule defined in {cls.__name__}")
@@ -252,7 +321,7 @@ class Kea:
         keaTest_name = keaTest.__module__ + '.' + keaTest.__name__
         keaTestElements = cls._KeaTest_DB.get(keaTest, KeaTestElements(keaTest_name))
         cls._KeaTest_DB[keaTest] = keaTestElements
-        return keaTestElements 
+        return keaTestElements
 
     def execute_rules(self, rules):
         '''
@@ -296,7 +365,7 @@ class Kea:
             self.logger.warning(f"Code causing the error: {code_context}")
             return CHECK_RESULT.UI_NOT_FOUND
         except AssertionError as e:
-            # the postcondition Q is violated 
+            # the postcondition Q is violated
             self.logger.error("Assertion failed: " + str(e))
             return CHECK_RESULT.ASSERTION_FAILURE
         except Exception as e:
@@ -338,13 +407,8 @@ class Kea:
         '''Check all rules and return the list of rules that meet the preconditions.'''
 
         # 2025/02/15 Support static precondition checker in Android system.
-        # return self.single_thread_precondition_checker()
-        
-        # HarmonyOS only support single_thread checker
-        if self.is_harmonyos:
-            return self.single_thread_precondition_checker()
-        
-        # Android support multithread checker
+        return self.single_thread_precondition_checker()
+         
         if len(self.all_rules_DB) < 5:
             return self.single_thread_precondition_checker()
         else:
@@ -401,14 +465,11 @@ class Kea:
                 if len(target_rule.preconditions) == 0:
                     rules_without_precondition[target_rule] = keaTest
         return rules_without_precondition
-    
-    @property
-    def is_harmonyos(self):
-        return self._pdl_driver.droidbot.device.is_harmonyos
 
     def teardown(self):
         """Called after a run has finished executing to clean up any necessary
         state.
         """
         self.thread_executor.shutdown()
+
 

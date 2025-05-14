@@ -1,0 +1,58 @@
+{
+  "tag": "2025-05-13_205749",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          42,
+          413
+        ],
+        [
+          473,
+          470
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/title",
+      "checked": false,
+      "text": "New balance",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 10,
+      "covered": false,
+      "parent": 9,
+      "temp_id": 10,
+      "size": "431*57",
+      "signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title[text]New balance[enabled,,]",
+      "view_str": "54bbe59d15f957e446168cc6e2207f20",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "1",
+      "desc": "<button bound_box=42,413,473,470>New balance</button>"
+    }
+  },
+  "start_state": "4a29038452715d6eaed4de9e473cb921",
+  "stop_state": "37699af8855541138a7e02444944c0d5",
+  "event_str": "TouchEvent(state=4a29038452715d6eaed4de9e473cb921, view=54bbe59d15f957e446168cc6e2207f20(MyExpenses/TextView-New balanc))"
+}

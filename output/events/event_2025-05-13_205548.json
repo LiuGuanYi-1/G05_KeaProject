@@ -1,0 +1,11 @@
+{
+  "tag": "2025-05-13_205548",
+  "event": {
+    "event_type": "intent",
+    "log_lines": null,
+    "intent": "am start org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.SplashActivity"
+  },
+  "start_state": "c73d741012715e8871a146f03da07913",
+  "stop_state": "da602900195a253c464eeeecfdd92d41",
+  "event_str": "IntentEvent(intent='am start org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.SplashActivity')"
+}

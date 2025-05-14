@@ -804,7 +804,7 @@ class LLMPolicy(RandomPolicy):
             allow_to_generate_utg=False,
             output_dir=None
     ):
-        super(LLMPolicy, self).__init__(device, app, kea, output_dir=output_dir)
+        super(LLMPolicy, self).__init__(device, app, kea, output_dir=output_dir, allow_to_generate_utg=True)
         self.logger = logging.getLogger(self.__class__.__name__)
         self.output_dir = output_dir
         save_log(self.logger, self.output_dir)
@@ -1112,7 +1112,8 @@ class LLMPolicy(RandomPolicy):
         activity = current_state.foreground_activity
         task_prompt = (
                  self.task  #+ f"\n{self.tasks_description_with_preconditions}\n"
-                + f"Currently, the App is stuck on the {activity.split('.')[-1]} page, unable to explore more features. You task is to select an action based on the current GUI information to perform next and help the app escape the UI tarpit."
+                + f"Currently, the App is stuck on the {activity.split('.')[-1]} page, unable to explore more features. You task is to consider following factors and select an action based on the current GUI information to perform next and help the app escape the UI tarpit."
+
         )
         visisted_page_prompt = (
                 f"I have already visited the following activities: \n" + "\n".join(activity_history)
@@ -1250,7 +1251,7 @@ class LLMPolicy(RandomPolicy):
         else:
             self.exploration_tree.add_inefficient_event(from_activity, event_desc)
         #保存实时树快照
-        self.exploration_tree.save_to_json(f"E:/Kea-main/Kea-main/activitytree/exploration_tree_{self.random_suffix}.json")
+        self.exploration_tree.save_to_json(f"E:/Kea-main/Kea/activitytree/exploration_tree_{self.random_suffix}.json")
 
     def _get_event_description(self):
         """

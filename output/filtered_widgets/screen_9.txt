@@ -1,0 +1,13 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,][bounds][[0, 84], [147, 210]]
+[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title[text]Budget Book[enabled,,][bounds][[147, 80], [1181, 151]]
+[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/subtitle[text]$0.00[enabled,,][bounds][[147, 156], [1181, 213]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/MANAGE_TEMPLATES_COMMAND[text]None[enabled,,][bounds][[1181, 84], [1308, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/BUDGET_COMMAND[text]None[enabled,,][bounds][[1308, 84], [1435, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/MANAGE_PARTIES_COMMAND[text]None[enabled,,][bounds][[1435, 84], [1562, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/SCAN_MODE_COMMAND[text]None[enabled,,][bounds][[1562, 84], [1689, 210]]
+[class]android.widget.ImageView[resource_id]None[text]None[enabled,,][bounds][[1689, 84], [1794, 210]]
+[class]android.widget.ImageButton[resource_id]org.totschnig.myexpenses.debug:id/fab[text]None[enabled,,][bounds][[1605, 891], [1752, 1038]]

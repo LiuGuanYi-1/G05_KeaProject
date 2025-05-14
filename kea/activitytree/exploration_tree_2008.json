@@ -1,0 +1,58 @@
+{
+  "activity": "Launcher",
+  "children": [
+    {
+      "activity": "com.android.launcher3/.Launcher",
+      "children": [
+        {
+          "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.SplashActivity",
+          "children": [],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": []
+        }
+      ],
+      "transition_events": [
+        "KillApp"
+      ],
+      "inefficient_events": []
+    },
+    {
+      "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity",
+      "children": [
+        {
+          "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses",
+          "children": [],
+          "transition_events": [
+            "Touch view with text description : [Get started]"
+          ],
+          "inefficient_events": [
+            "touch view without text description",
+            "Unknown",
+            "RotateToLandscape",
+            "RotateToPortrait",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "Unknown",
+            "touch view without text description",
+            "touch view without text description",
+            "Unknown",
+            "Touch view with text description : [Budget Book]",
+            "Touch view with text description : [New balance]"
+          ]
+        }
+      ],
+      "transition_events": [
+        "touch view without text description"
+      ],
+      "inefficient_events": [
+        "Touch view with text description : [Next]",
+        "Touch view with text description : [Next]"
+      ]
+    }
+  ],
+  "inefficient_events": [],
+  "transition_events": []
+}

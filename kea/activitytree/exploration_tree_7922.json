@@ -1,0 +1,32 @@
+{
+  "activity": "Launcher",
+  "children": [
+    {
+      "activity": "com.android.launcher3/.Launcher",
+      "children": [
+        {
+          "activity": "de.danoeh.antennapod.debug/de.danoeh.antennapod.activity.MainActivity",
+          "children": [],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": [
+            "RotateToLandscape",
+            "touch view without text description",
+            "Unknown",
+            "Touch view with text description : [Search]",
+            "touch view without text description",
+            "touch view without text description",
+            "touch view without text description"
+          ]
+        }
+      ],
+      "transition_events": [
+        "KillApp"
+      ],
+      "inefficient_events": []
+    }
+  ],
+  "inefficient_events": [],
+  "transition_events": []
+}

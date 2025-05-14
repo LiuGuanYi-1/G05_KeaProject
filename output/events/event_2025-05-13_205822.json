@@ -1,0 +1,62 @@
+{
+  "tag": "2025-05-13_205822",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        10
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          84
+        ],
+        [
+          629,
+          210
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/OperationType",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.Spinner",
+      "scrollable": true,
+      "selected": false,
+      "long_clickable": true,
+      "global_drawing_order": 8,
+      "covered": false,
+      "parent": 7,
+      "temp_id": 9,
+      "size": "482*126",
+      "signature": "[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/OperationType[text]None[enabled,,]",
+      "view_str": "6e3ad224f125f789f77c01ebf3aa85c2",
+      "content_free_signature": "[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/OperationType",
+      "allowed_actions": [
+        "scroll up",
+        "scroll down",
+        "long_touch"
+      ],
+      "special_attrs": [],
+      "local_id": "1",
+      "desc": "<button bound_box=147,84,629,210></button>"
+    }
+  },
+  "start_state": "0b71568079e418151db37047bc3f91e2",
+  "stop_state": "633d85b33b5cc17bbafed8231a768fc4",
+  "event_str": "TouchEvent(state=0b71568079e418151db37047bc3f91e2, view=6e3ad224f125f789f77c01ebf3aa85c2(ExpenseEdit/Spinner-))"
+}

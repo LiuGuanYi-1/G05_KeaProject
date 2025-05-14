@@ -79,6 +79,8 @@ class InputManager(object):
         self.disable_rotate=disable_rotate
         self.is_package = is_package
         self.policy = self.get_input_policy(device, app, master)
+        self.view_descriptions_cache = {}
+        self.screen_category_cache = {}
 
     def get_input_policy(self, device, app, master):
         if self.policy_name == POLICY_NONE:

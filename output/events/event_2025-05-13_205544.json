@@ -1,0 +1,11 @@
+{
+  "tag": "2025-05-13_205544",
+  "event": {
+    "event_type": "kill_app",
+    "log_lines": null,
+    "stop_intent": "am force-stop org.totschnig.myexpenses.debug"
+  },
+  "start_state": "c73d741012715e8871a146f03da07913",
+  "stop_state": "c73d741012715e8871a146f03da07913",
+  "event_str": "KillAppEvent()"
+}

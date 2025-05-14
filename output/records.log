@@ -1,0 +1,129 @@
+2025-05-13 20:55:40,633 - Device - INFO - disable minicap on emulator
+2025-05-13 20:55:40,635 - Device - INFO - waiting for device
+2025-05-13 20:55:41,514 - Device - INFO - Sending documents.
+2025-05-13 20:55:42,158 - Device - INFO - Please wait while installing the app...
+2025-05-13 20:55:43,281 - Device - INFO - App installed: org.totschnig.myexpenses.debug
+2025-05-13 20:55:43,282 - Device - INFO - Main activity: org.totschnig.myexpenses.activity.SplashActivity
+2025-05-13 20:55:43,283 - InputEventManager - INFO - start sending events, policy is llm
+2025-05-13 20:55:43,312 - LLMPolicy - INFO - Exploration action count: 0
+2025-05-13 20:55:43,312 - LLMPolicy - INFO - Exploration action count: 0
+2025-05-13 20:55:44,304 - Device - INFO - Total event count: 1
+2025-05-13 20:55:48,707 - LLMPolicy - INFO - Action sequence updated: kill_app
+2025-05-13 20:55:48,707 - LLMPolicy - INFO - Action sequence updated: kill_app
+2025-05-13 20:55:48,729 - LLMPolicy - INFO - Exploration action count: 1
+2025-05-13 20:55:48,729 - LLMPolicy - INFO - Exploration action count: 1
+2025-05-13 20:55:48,730 - Device - INFO - Total event count: 2
+2025-05-13 20:55:55,103 - LLMPolicy - INFO - Action sequence updated: intent
+2025-05-13 20:55:55,103 - LLMPolicy - INFO - Action sequence updated: intent
+2025-05-13 20:55:55,183 - LLMPolicy - INFO - Exploration action count: 2
+2025-05-13 20:55:55,183 - LLMPolicy - INFO - Exploration action count: 2
+2025-05-13 20:55:58,494 - LLMPolicy - INFO - Using random event
+2025-05-13 20:55:58,494 - LLMPolicy - INFO - Using random event
+2025-05-13 20:55:58,515 - Device - INFO - Total event count: 3
+2025-05-13 20:55:59,524 - LLMPolicy - ERROR - -------initialize failed-----------
+2025-05-13 20:55:59,524 - LLMPolicy - ERROR - -------initialize failed-----------
+2025-05-13 20:56:00,320 - Device - INFO - Total event count: 4
+2025-05-13 20:56:06,000 - LLMPolicy - INFO - Action sequence updated: - scroll up scrollable view
+2025-05-13 20:56:06,000 - LLMPolicy - INFO - Action sequence updated: - scroll up scrollable view
+2025-05-13 20:56:06,038 - LLMPolicy - INFO - Exploration action count: 3
+2025-05-13 20:56:06,038 - LLMPolicy - INFO - Exploration action count: 3
+2025-05-13 20:56:07,743 - LLMPolicy - INFO - New UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:07,743 - LLMPolicy - INFO - New UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:07,777 - LLMPolicy - INFO - Current state: be4151d038281bf5b734c50871936141
+2025-05-13 20:56:07,777 - LLMPolicy - INFO - Current state: be4151d038281bf5b734c50871936141
+2025-05-13 20:56:20,812 - Device - INFO - Total event count: 5
+2025-05-13 20:56:24,733 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Next"
+2025-05-13 20:56:24,733 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Next"
+2025-05-13 20:56:24,753 - LLMPolicy - INFO - Exploration action count: 4
+2025-05-13 20:56:24,753 - LLMPolicy - INFO - Exploration action count: 4
+2025-05-13 20:56:26,459 - LLMPolicy - INFO - Repeated UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:26,459 - LLMPolicy - INFO - Repeated UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:26,477 - LLMPolicy - INFO - Current state: 4e5b12341a8a8ac69a549fafca724c06
+2025-05-13 20:56:26,477 - LLMPolicy - INFO - Current state: 4e5b12341a8a8ac69a549fafca724c06
+2025-05-13 20:56:29,753 - Device - INFO - Total event count: 6
+2025-05-13 20:56:34,524 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Next"
+2025-05-13 20:56:34,524 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Next"
+2025-05-13 20:56:34,562 - LLMPolicy - INFO - Exploration action count: 5
+2025-05-13 20:56:34,562 - LLMPolicy - INFO - Exploration action count: 5
+2025-05-13 20:56:36,370 - LLMPolicy - INFO - Repeated UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:36,370 - LLMPolicy - INFO - Repeated UI tarpit detected: ('intent', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity')
+2025-05-13 20:56:36,398 - LLMPolicy - INFO - Current state: bb07a98e8073a1065976eb55fefa844c
+2025-05-13 20:56:36,398 - LLMPolicy - INFO - Current state: bb07a98e8073a1065976eb55fefa844c
+2025-05-13 20:56:51,930 - Device - INFO - Total event count: 7
+2025-05-13 20:56:58,373 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Get started"
+2025-05-13 20:56:58,373 - LLMPolicy - INFO - Action sequence updated: - touch view with text "Get started"
+2025-05-13 20:56:58,395 - LLMPolicy - INFO - Exploration action count: 6
+2025-05-13 20:56:58,395 - LLMPolicy - INFO - Exploration action count: 6
+2025-05-13 20:57:00,316 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:00,316 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:00,341 - Device - INFO - Total event count: 8
+2025-05-13 20:57:06,743 - LLMPolicy - INFO - Action sequence updated: None
+2025-05-13 20:57:06,743 - LLMPolicy - INFO - Action sequence updated: None
+2025-05-13 20:57:06,764 - LLMPolicy - INFO - Exploration action count: 7
+2025-05-13 20:57:06,764 - LLMPolicy - INFO - Exploration action count: 7
+2025-05-13 20:57:07,575 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:07,575 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:07,591 - Device - INFO - Total event count: 9
+2025-05-13 20:57:12,018 - LLMPolicy - INFO - Action sequence updated: - scroll left scrollable view
+2025-05-13 20:57:12,018 - LLMPolicy - INFO - Action sequence updated: - scroll left scrollable view
+2025-05-13 20:57:12,037 - LLMPolicy - INFO - Exploration action count: 8
+2025-05-13 20:57:12,037 - LLMPolicy - INFO - Exploration action count: 8
+2025-05-13 20:57:13,615 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:13,615 - LLMPolicy - INFO - Using random event
+2025-05-13 20:57:13,635 - Device - INFO - Total event count: 10
+2025-05-13 20:57:18,032 - LLMPolicy - INFO - Action sequence updated: - touch view with text "$0.00"
+2025-05-13 20:57:18,032 - LLMPolicy - INFO - Action sequence updated: - touch view with text "$0.00"
+2025-05-13 20:57:18,068 - LLMPolicy - INFO - Exploration action count: 9
+2025-05-13 20:57:18,068 - LLMPolicy - INFO - Exploration action count: 9
+2025-05-13 20:57:19,588 - LLMPolicy - INFO - New UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:57:19,588 - LLMPolicy - INFO - New UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:57:19,631 - LLMPolicy - INFO - Current state: 4a29038452715d6eaed4de9e473cb921
+2025-05-13 20:57:19,631 - LLMPolicy - INFO - Current state: 4a29038452715d6eaed4de9e473cb921
+2025-05-13 20:57:49,822 - Device - INFO - Total event count: 11
+2025-05-13 20:57:54,036 - LLMPolicy - INFO - Action sequence updated: - touch view with text "New balance"
+2025-05-13 20:57:54,036 - LLMPolicy - INFO - Action sequence updated: - touch view with text "New balance"
+2025-05-13 20:57:54,074 - LLMPolicy - INFO - Exploration action count: 10
+2025-05-13 20:57:54,074 - LLMPolicy - INFO - Exploration action count: 10
+2025-05-13 20:57:55,706 - LLMPolicy - INFO - Repeated UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:57:55,706 - LLMPolicy - INFO - Repeated UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:57:55,738 - LLMPolicy - INFO - Current state: 37699af8855541138a7e02444944c0d5
+2025-05-13 20:57:55,738 - LLMPolicy - INFO - Current state: 37699af8855541138a7e02444944c0d5
+2025-05-13 20:58:00,263 - Device - INFO - Total event count: 12
+2025-05-13 20:58:05,157 - LLMPolicy - INFO - Action sequence updated: - touch view with text "OK"
+2025-05-13 20:58:05,157 - LLMPolicy - INFO - Action sequence updated: - touch view with text "OK"
+2025-05-13 20:58:05,182 - LLMPolicy - INFO - Exploration action count: 11
+2025-05-13 20:58:05,182 - LLMPolicy - INFO - Exploration action count: 11
+2025-05-13 20:58:06,955 - LLMPolicy - INFO - Repeated UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:58:06,955 - LLMPolicy - INFO - Repeated UI tarpit detected: ('- scroll left scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses')
+2025-05-13 20:58:06,997 - LLMPolicy - INFO - Current state: a13c1e8c762a8f0f01c2051d4dce20dd
+2025-05-13 20:58:06,997 - LLMPolicy - INFO - Current state: a13c1e8c762a8f0f01c2051d4dce20dd
+2025-05-13 20:58:08,732 - Device - INFO - Total event count: 13
+2025-05-13 20:58:11,967 - LLMPolicy - INFO - Action sequence updated: - go back
+2025-05-13 20:58:11,967 - LLMPolicy - INFO - Action sequence updated: - go back
+2025-05-13 20:58:12,000 - LLMPolicy - INFO - Exploration action count: 12
+2025-05-13 20:58:12,000 - LLMPolicy - INFO - Exploration action count: 12
+2025-05-13 20:58:13,606 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:13,606 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:13,626 - Device - INFO - Total event count: 14
+2025-05-13 20:58:19,756 - LLMPolicy - INFO - Action sequence updated: - touch view "New Transaction. New Transfer. New split"
+2025-05-13 20:58:19,756 - LLMPolicy - INFO - Action sequence updated: - touch view "New Transaction. New Transfer. New split"
+2025-05-13 20:58:19,798 - LLMPolicy - INFO - Exploration action count: 13
+2025-05-13 20:58:19,798 - LLMPolicy - INFO - Exploration action count: 13
+2025-05-13 20:58:21,512 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:21,512 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:22,145 - Device - INFO - Total event count: 15
+2025-05-13 20:58:26,308 - LLMPolicy - INFO - Action sequence updated: - touch scrollable view
+2025-05-13 20:58:26,308 - LLMPolicy - INFO - Action sequence updated: - touch scrollable view
+2025-05-13 20:58:26,331 - LLMPolicy - INFO - Exploration action count: 14
+2025-05-13 20:58:26,331 - LLMPolicy - INFO - Exploration action count: 14
+2025-05-13 20:58:28,149 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:28,149 - LLMPolicy - INFO - Using random event
+2025-05-13 20:58:28,164 - Device - INFO - Total event count: 16
+2025-05-13 20:58:32,426 - LLMPolicy - INFO - Action sequence updated: - go back
+2025-05-13 20:58:32,426 - LLMPolicy - INFO - Action sequence updated: - go back
+2025-05-13 20:58:32,452 - LLMPolicy - INFO - Exploration action count: 15
+2025-05-13 20:58:32,452 - LLMPolicy - INFO - Exploration action count: 15
+2025-05-13 20:58:34,266 - LLMPolicy - INFO - New UI tarpit detected: ('- touch scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.ExpenseEdit')
+2025-05-13 20:58:34,266 - LLMPolicy - INFO - New UI tarpit detected: ('- touch scrollable view', 'org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.ExpenseEdit')
+2025-05-13 20:58:34,286 - LLMPolicy - INFO - Current state: 0b71568079e418151db37047bc3f91e2
+2025-05-13 20:58:34,286 - LLMPolicy - INFO - Current state: 0b71568079e418151db37047bc3f91e2

@@ -1,0 +1,58 @@
+{
+  "tag": "2025-05-13_205713",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 4,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          147,
+          156
+        ],
+        [
+          1181,
+          213
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/subtitle",
+      "checked": false,
+      "text": "$0.00",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 12,
+      "covered": false,
+      "parent": 11,
+      "temp_id": 13,
+      "size": "1034*57",
+      "signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/subtitle[text]$0.00[enabled,,]",
+      "view_str": "ad3a588536b94306e9035aa9a02a7c80",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/subtitle",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "2",
+      "desc": "<button bound_box=147,156,1181,213>$0.00</button>"
+    }
+  },
+  "start_state": "9193b626849ab2498a87b2fbabe9e15c",
+  "stop_state": "4a29038452715d6eaed4de9e473cb921",
+  "event_str": "TouchEvent(state=9193b626849ab2498a87b2fbabe9e15c, view=ad3a588536b94306e9035aa9a02a7c80(MyExpenses/TextView-$0.00))"
+}

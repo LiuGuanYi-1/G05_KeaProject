@@ -931,9 +931,11 @@ class DeviceState(object):
                 # 生成动作
                 self._generate_actions(view, available_actions, view_desc, view_descs)
 
-        # 并发获取AI描述
-        if views_need_ai_desc:
-            with ThreadPoolExecutor(max_workers=10) as executor:
+        with ThreadPoolExecutor(max_workers=10) as executor:
+            # 提交页面分类任务
+            screen_category_future = executor.submit(self.get_screen_category, input_manager)
+            if views_need_ai_desc:
+                # 并发获取组件AI描述
                 futures = []
                 for view in views_need_ai_desc:
                     futures.append(executor.submit(self.get_view_detail, view, input_manager))
@@ -970,13 +972,15 @@ class DeviceState(object):
         # view_descs.append(f"- system back key [action {len(available_actions)}]")
         # available_actions.append(KeyEvent(name='BACK'))
 
-        screen_category = self.get_screen_category()
-        if screen_category != "unknown":
-            screen_category = "Current UI trap category: " + screen_category + "\nPlease consider the current category when selecting optional operations"
-        else:
-            screen_category = ""
+        # 获取页面分类结果
+        screen_category = "unknown"
+        if screen_category_future:
+            try:
+                screen_category = f"当前页面的类别为可能为 ： {screen_category_future.result()}\n"
+            except Exception as e:
+                self.logger.warning(f"Failed to get screen category: {str(e)}")
         return state_desc + ";\n ".join(view_descs), available_actions, context_prompt + ";\n".join(
-            context_environment_messages) + "Please make your selection based on the text and possible categories of the current page", screen_category
+            context_environment_messages) + "\nPlease make your selection based on the text and possible categories of the current page", screen_category
 
     def _generate_actions(self, view, available_actions, view_desc, view_descs):
         """Generate view operations and add them to the description list"""
@@ -1095,10 +1099,14 @@ class DeviceState(object):
                 valid_widgets.append(view)
         return valid_widgets
 
-    def get_screen_category(self, model_name="gpt-4o", max_retries=2):
+    def get_screen_category(self, input_manager, model_name="gpt-4o", max_retries=2):
         """
         查询当前页面类别
         """
+        # 有缓存直接返回
+        if self.foreground_activity in input_manager.screen_category_cache:
+            return input_manager.screen_category_cache[self.foreground_activity]
+
         if not self.screenshot_path or not os.path.exists(self.screenshot_path):
             print("unknown path\n")
             return "unknown"
@@ -1148,7 +1156,8 @@ class DeviceState(object):
                     messages=messages,
                     max_tokens=300,
                 )
-
+                # 缓存页面类型
+                input_manager.screen_category_cache[self.foreground_activity] = completion.choices[0].message.content.strip()
                 return completion.choices[0].message.content.strip()
 
             except Exception as e:

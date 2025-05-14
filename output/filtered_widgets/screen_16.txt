@@ -1,0 +1,7 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.TextView[resource_id]android:id/text1[text]New Transaction[enabled,,][bounds][[147, 84], [419, 210]]
+[class]android.widget.TextView[resource_id]android:id/text1[text]New Transfer[enabled,,][bounds][[147, 210], [419, 336]]
+[class]android.widget.TextView[resource_id]android:id/text1[text]New split[enabled,,][bounds][[147, 336], [419, 378]]

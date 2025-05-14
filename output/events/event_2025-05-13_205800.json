@@ -1,0 +1,58 @@
+{
+  "tag": "2025-05-13_205800",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 4,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1185,
+          669
+        ],
+        [
+          1353,
+          795
+        ]
+      ],
+      "resource_id": "android:id/button1",
+      "checked": false,
+      "text": "OK",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 23,
+      "covered": false,
+      "parent": 22,
+      "temp_id": 23,
+      "size": "168*126",
+      "signature": "[class]android.widget.Button[resource_id]android:id/button1[text]OK[enabled,,]",
+      "view_str": "5e184e431951a37810937d0c0a71da52",
+      "content_free_signature": "[class]android.widget.Button[resource_id]android:id/button1",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "3",
+      "desc": "<button bound_box=1185,669,1353,795>OK</button>"
+    }
+  },
+  "start_state": "37699af8855541138a7e02444944c0d5",
+  "stop_state": "a13c1e8c762a8f0f01c2051d4dce20dd",
+  "event_str": "TouchEvent(state=37699af8855541138a7e02444944c0d5, view=5e184e431951a37810937d0c0a71da52(MyExpenses/Button-OK))"
+}

@@ -1,0 +1,7 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.Switch[resource_id]org.totschnig.myexpenses.debug:id/auto_backup[text]None[enabled,,][bounds][[105, 994], [975, 1120]]
+[class]android.widget.Button[resource_id]None[text]EXPERIMENTAL[enabled,,][bounds][[42, 1646], [371, 1772]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_next[text]Next[enabled,,][bounds][[807, 1647], [1038, 1773]]

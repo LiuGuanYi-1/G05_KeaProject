@@ -1,0 +1,10 @@
+{
+  "tag": "2025-05-13_205700",
+  "event": {
+    "event_type": null,
+    "log_lines": null
+  },
+  "start_state": "7766787a7ff732ad1c4762803bfe86d6",
+  "stop_state": "9193b626849ab2498a87b2fbabe9e15c",
+  "event_str": "RotateDeviceToLandscapeEvent()"
+}

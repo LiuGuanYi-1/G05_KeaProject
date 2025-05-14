@@ -1,0 +1,56 @@
+{
+  "activity": "Launcher",
+  "children": [
+    {
+      "activity": "com.android.launcher3/.Launcher",
+      "children": [
+        {
+          "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.OnboardingActivity",
+          "children": [
+            {
+              "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses",
+              "children": [
+                {
+                  "activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.ExpenseEdit",
+                  "children": [],
+                  "transition_events": [
+                    "touch view without text description"
+                  ],
+                  "inefficient_events": [
+                    "touch view without text description",
+                    "Key"
+                  ]
+                }
+              ],
+              "transition_events": [
+                "Touch view with text description : [Get started]"
+              ],
+              "inefficient_events": [
+                "RotateToLandscape",
+                "Unknown",
+                "Touch view with text description : [$0.00]",
+                "Touch view with text description : [New balance]",
+                "Touch view with text description : [OK]",
+                "Key"
+              ]
+            }
+          ],
+          "transition_events": [
+            "Intent"
+          ],
+          "inefficient_events": [
+            "Unknown",
+            "Touch view with text description : [Next]",
+            "Touch view with text description : [Next]"
+          ]
+        }
+      ],
+      "transition_events": [
+        "KillApp"
+      ],
+      "inefficient_events": []
+    }
+  ],
+  "inefficient_events": [],
+  "transition_events": []
+}

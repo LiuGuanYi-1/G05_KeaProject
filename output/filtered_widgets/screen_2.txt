@@ -1,0 +1,12 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.view.View[resource_id]None[text]None[enabled,,][bounds][[508, 1469], [571, 1532]]
+[class]android.widget.ImageView[resource_id]com.android.quicksearchbox:id/search_icon[text]None[enabled,,][bounds][[60, 159], [186, 285]]
+[class]android.widget.TextView[resource_id]com.android.quicksearchbox:id/search_widget_text[text]None[enabled,,][bounds][[186, 165], [1008, 279]]
+[class]android.widget.TextView[resource_id]None[text]Email[enabled,,][bounds][[35, 1192], [237, 1469]]
+[class]android.widget.TextView[resource_id]None[text]Gallery[enabled,,][bounds][[237, 1192], [439, 1469]]
+[class]android.widget.TextView[resource_id]None[text]Phone[enabled,,][bounds][[35, 1553], [237, 1789]]
+[class]android.widget.TextView[resource_id]None[text]Messaging[enabled,,][bounds][[237, 1553], [439, 1789]]
+[class]android.widget.TextView[resource_id]None[text]Camera[enabled,,][bounds][[843, 1553], [1045, 1789]]

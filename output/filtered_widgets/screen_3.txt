@@ -1,0 +1,9 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/themeSpinner[text]None[enabled,,][bounds][[84, 888], [975, 1014]]
+[class]android.view.View[resource_id]None[text]None[enabled,,][bounds][[133, 1463], [446, 1610]]
+[class]android.view.View[resource_id]None[text]None[enabled,checked,][bounds][[446, 1463], [948, 1610]]
+[class]android.view.View[resource_id]None[text]None[enabled,,][bounds][[0, 1613], [1080, 1799]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_next[text]Next[enabled,,][bounds][[807, 1647], [1038, 1773]]

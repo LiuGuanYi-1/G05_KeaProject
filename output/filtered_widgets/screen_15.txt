@@ -1,0 +1,19 @@
+======== covered widgets =========
+[class]android.widget.ImageView[resource_id]org.totschnig.myexpenses.debug:id/TagSelection[text]None[enabled,,]
+
+========= valid widgets ==========
+[class]android.widget.ImageButton[resource_id]None[text]None[enabled,,][bounds][[0, 84], [147, 210]]
+[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/OperationType[text]None[enabled,,][bounds][[147, 84], [629, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/SAVE_AND_NEW_COMMAND[text]None[enabled,,][bounds][[1308, 84], [1435, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/CREATE_TEMPLATE_COMMAND[text]None[enabled,,][bounds][[1435, 84], [1562, 210]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/HELP_COMMAND[text]None[enabled,,][bounds][[1562, 84], [1689, 210]]
+[class]android.widget.ImageView[resource_id]None[text]None[enabled,,][bounds][[1689, 84], [1794, 210]]
+[class]android.widget.Spinner[resource_id]org.totschnig.myexpenses.debug:id/Account[text]None[enabled,,][bounds][[530, 231], [1752, 357]]
+[class]android.widget.Switch[resource_id]org.totschnig.myexpenses.debug:id/TaType[text]−[enabled,,][bounds][[530, 357], [667, 483]]
+[class]android.widget.EditText[resource_id]org.totschnig.myexpenses.debug:id/AmountEditText[text]None[enabled,,][bounds][[667, 357], [1625, 483]]
+[class]android.widget.ImageView[resource_id]org.totschnig.myexpenses.debug:id/Calculator[text]None[enabled,,][bounds][[1625, 357], [1752, 483]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/DateButton[text]5/13/25[enabled,,][bounds][[530, 483], [1135, 609]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/TimeButton[text]12:58 PM[enabled,,][bounds][[1146, 483], [1752, 609]]
+[class]android.widget.EditText[resource_id]org.totschnig.myexpenses.debug:id/Payee[text]None[enabled,,][bounds][[530, 609], [1752, 735]]
+[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/Category[text]Select[enabled,,][bounds][[530, 735], [1752, 861]]
+[class]android.widget.ImageButton[resource_id]org.totschnig.myexpenses.debug:id/fab[text]None[enabled,,][bounds][[1605, 782], [1752, 929]]

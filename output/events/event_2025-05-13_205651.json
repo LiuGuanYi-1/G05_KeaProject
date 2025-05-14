@@ -1,0 +1,58 @@
+{
+  "tag": "2025-05-13_205651",
+  "event": {
+    "event_type": "touch",
+    "log_lines": null,
+    "x": null,
+    "y": null,
+    "view": {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 3,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          728,
+          1647
+        ],
+        [
+          1038,
+          1773
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/suw_navbar_done",
+      "checked": false,
+      "text": "Get started",
+      "class": "android.widget.Button",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 33,
+      "covered": false,
+      "parent": 29,
+      "temp_id": 33,
+      "size": "310*126",
+      "signature": "[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_done[text]Get started[enabled,,]",
+      "view_str": "9ed79bfa258b5db2f5f9ca551e41244f",
+      "content_free_signature": "[class]android.widget.Button[resource_id]org.totschnig.myexpenses.debug:id/suw_navbar_done",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "12",
+      "desc": "<button bound_box=728,1647,1038,1773>Get started</button>"
+    }
+  },
+  "start_state": "bb07a98e8073a1065976eb55fefa844c",
+  "stop_state": "7766787a7ff732ad1c4762803bfe86d6",
+  "event_str": "TouchEvent(state=bb07a98e8073a1065976eb55fefa844c, view=9ed79bfa258b5db2f5f9ca551e41244f(OnboardingActivity/Button-Get starte))"
+}

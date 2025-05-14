@@ -1,0 +1,506 @@
+{
+  "tag": 10,
+  "state_str": "4a29038452715d6eaed4de9e473cb921",
+  "state_str_content_free": "50ee35c8f3ebccbe30a657f4bed12f2f",
+  "foreground_activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses",
+  "activity_stack": [
+    "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses"
+  ],
+  "background_services": [
+    "android.ext.services/.notification.Assistant",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.android.systemui/.ImageWallpaper",
+    "com.android.launcher3/.notification.NotificationListener",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/.SystemUIService",
+    "com.android.se/.SecureElementService",
+    "com.github.uiautomator/.AdbKeyboard",
+    "com.android.stk/.StkAppService",
+    "com.android.phone/com.android.internal.telephony.dataconnection.CellularDataService",
+    "com.android.service.ims/.RcsService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.android.launcher3/com.android.quickstep.TouchInteractionService",
+    "com.android.smspush/.WapPushManager",
+    "com.android.phone/.vvm.RemoteVvmTaskManager",
+    "com.android.location.fused/.FusedLocationService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.android.mms.service/.MmsService",
+    "com.android.phone/.TelephonyDebugService"
+  ],
+  "width": 1080,
+  "height": 1920,
+  "views": [
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 0,
+      "content_description": null,
+      "children": [
+        1
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          232
+        ],
+        [
+          499,
+          510
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 0,
+      "covered": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "499*278",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "9dce3e768e267584cce903a3b2f73630",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        2
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          232
+        ],
+        [
+          499,
+          510
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 1,
+      "covered": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "499*278",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "2ae3c3974ae2ea54692dcbdce9c0b81b",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 2,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": true,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        3,
+        7
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          253
+        ],
+        [
+          499,
+          505
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.ListView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 2,
+      "covered": false,
+      "parent": 1,
+      "temp_id": 2,
+      "size": "499*252",
+      "signature": "[class]android.widget.ListView[resource_id]None[text]None[enabled,,]",
+      "view_str": "c710aaf46558dc5eb044bbf0c7c895d1",
+      "content_free_signature": "[class]android.widget.ListView[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        4
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          253
+        ],
+        [
+          499,
+          379
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 3,
+      "covered": false,
+      "parent": 2,
+      "temp_id": 3,
+      "size": "499*126",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "7bf98789d0a49501310a8df9414dfc1c",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 2,
+      "content_description": null,
+      "children": [
+        5
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          253
+        ],
+        [
+          499,
+          379
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 4,
+      "covered": false,
+      "parent": 3,
+      "temp_id": 4,
+      "size": "499*126",
+      "signature": "[class]android.widget.LinearLayout[resource_id]org.totschnig.myexpenses.debug:id/content[text]None[enabled,,]",
+      "view_str": "6141e8adbeeab2e46d1b3a3450ca49c3",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]org.totschnig.myexpenses.debug:id/content"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        6
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          42,
+          287
+        ],
+        [
+          473,
+          344
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 5,
+      "covered": false,
+      "parent": 4,
+      "temp_id": 5,
+      "size": "431*57",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "45d7cf89a3b9ad7266dab9889d1ad205",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          42,
+          287
+        ],
+        [
+          473,
+          344
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/title",
+      "checked": false,
+      "text": "Copy to clipboard",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 6,
+      "covered": false,
+      "parent": 5,
+      "temp_id": 6,
+      "size": "431*57",
+      "signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title[text]Copy to clipboard[enabled,,]",
+      "view_str": "b82fe7764e77d9733f98503b6c203c48",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "0",
+      "desc": "<button bound_box=42,287,473,344>Copy to clipboard</button>"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": true,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 2,
+      "content_description": null,
+      "children": [
+        8
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          379
+        ],
+        [
+          499,
+          505
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 7,
+      "covered": false,
+      "parent": 2,
+      "temp_id": 7,
+      "size": "499*126",
+      "signature": "[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "7bf98789d0a49501310a8df9414dfc1c",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 2,
+      "content_description": null,
+      "children": [
+        9
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          0,
+          379
+        ],
+        [
+          499,
+          505
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/content",
+      "checked": false,
+      "text": null,
+      "class": "android.widget.LinearLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 8,
+      "covered": false,
+      "parent": 7,
+      "temp_id": 8,
+      "size": "499*126",
+      "signature": "[class]android.widget.LinearLayout[resource_id]org.totschnig.myexpenses.debug:id/content[text]None[enabled,,]",
+      "view_str": "6141e8adbeeab2e46d1b3a3450ca49c3",
+      "content_free_signature": "[class]android.widget.LinearLayout[resource_id]org.totschnig.myexpenses.debug:id/content"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [
+        10
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          42,
+          413
+        ],
+        [
+          473,
+          470
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.RelativeLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 9,
+      "covered": false,
+      "parent": 8,
+      "temp_id": 9,
+      "size": "431*57",
+      "signature": "[class]android.widget.RelativeLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "a611c65d6beb22506b6ede8bec08dd6b",
+      "content_free_signature": "[class]android.widget.RelativeLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          42,
+          413
+        ],
+        [
+          473,
+          470
+        ]
+      ],
+      "resource_id": "org.totschnig.myexpenses.debug:id/title",
+      "checked": false,
+      "text": "New balance",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 10,
+      "covered": false,
+      "parent": 9,
+      "temp_id": 10,
+      "size": "431*57",
+      "signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title[text]New balance[enabled,,]",
+      "view_str": "54bbe59d15f957e446168cc6e2207f20",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]org.totschnig.myexpenses.debug:id/title",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "1",
+      "desc": "<button bound_box=42,413,473,470>New balance</button>"
+    }
+  ]
+}

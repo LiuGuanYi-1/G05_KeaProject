@@ -1,0 +1,6 @@
+======== covered widgets =========
+
+
+========= valid widgets ==========
+[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,][bounds][[0, 253], [499, 379]]
+[class]android.widget.LinearLayout[resource_id]None[text]None[enabled,,][bounds][[0, 379], [499, 505]]

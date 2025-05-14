@@ -47,6 +47,11 @@ class Setting:
     generate_utg:bool=False
     is_package:bool=False
     disable_rotate:bool=False
+    tasks_matched = False
+
+    def set_tasks_matched(self,tasks_matched: bool):
+        self.tasks_matched = tasks_matched
+
 
 def parse_args():
     """Parse, load and sanitize the args from the command line and the config file `config.yml`.
@@ -85,6 +90,7 @@ def parse_args():
                         help="Generate UI transition graph")
     parser.add_argument("-disable_rotate", action="store_true", dest="disable_rotate", default=False,
                         help="Disable rotate event in the testing")
+    parser.add_argument("-tasks_matched", action="store_true", dest="tasks_matched", default=False,)
     options = parser.parse_args()
 
     # load the args from the config file `config.yml`
@@ -139,7 +145,7 @@ def load_pdl_driver(settings: "Setting"):
 def start_kea(kea:"Kea", settings:"Setting" = None):
 
     # droidbot is used as the data generator of Kea
-    droidbot = DroidBot(    
+    droidbot = DroidBot(
         app_path=settings.apk_path,
         device_serial=settings.device_serial,
         is_emulator=settings.is_emulator,
@@ -169,11 +175,14 @@ def start_kea(kea:"Kea", settings:"Setting" = None):
         is_package=settings.is_package,
         settings=settings,
         generate_utg=settings.generate_utg,
-        disable_rotate=settings.disable_rotate
+        disable_rotate=settings.disable_rotate,
+        tasks_matched=settings.tasks_matched
     )
-
-    kea._pdl_driver.set_droidbot(droidbot)  
+    kea._pdl_driver.set_droidbot(droidbot)
     droidbot.start()
+
+
+
     
 
 def main():
@@ -197,7 +206,10 @@ def main():
                        generate_utg=options.generate_utg,
                        is_package=options.is_package,
                        disable_rotate=options.disable_rotate
+
+
                        )
+    settings.set_tasks_matched(options.tasks_matched)
 
     # load the pdl driver for Android/HarmonyOS
     driver = load_pdl_driver(settings)
@@ -205,11 +217,12 @@ def main():
     # load the app properties to be tested
     Kea.load_app_properties(options.property_files)
 
+
     # create Kea
     kea = Kea()
-    print(f"INFO: All Test cases: {kea._KeaTest_DB}") 
+    print(f"INFO: All Test cases: {kea._KeaTest_DB}")
     # start Kea
-    start_kea(kea, settings) 
+    start_kea(kea, settings)
 
 if __name__ == "__main__":
     main()

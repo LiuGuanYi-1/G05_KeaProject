@@ -1,0 +1,82 @@
+[
+    {
+        "event": "KillApp",
+        "event_index": "1",
+        "screen_shoot": "screen_1.png"
+    },
+    {
+        "event": "start",
+        "event_index": "2",
+        "screen_shoot": "screen_2.png"
+    },
+    {
+        "event": "click",
+        "event_index": "3",
+        "screen_shoot": "screen_3.png"
+    },
+    {
+        "event": "Scroll UP",
+        "event_index": "4",
+        "screen_shoot": "screen_4.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "5",
+        "screen_shoot": "screen_5.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "6",
+        "screen_shoot": "screen_6.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "7",
+        "screen_shoot": "screen_7.png"
+    },
+    {
+        "event": "RotateRight",
+        "event_index": "8",
+        "screen_shoot": "screen_8.png"
+    },
+    {
+        "event": "Scroll LEFT",
+        "event_index": "9",
+        "screen_shoot": "screen_9.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "10",
+        "screen_shoot": "screen_10.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "11",
+        "screen_shoot": "screen_11.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "12",
+        "screen_shoot": "screen_12.png"
+    },
+    {
+        "event": "BACK",
+        "event_index": "13",
+        "screen_shoot": "screen_13.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "14",
+        "screen_shoot": "screen_14.png"
+    },
+    {
+        "event": "Click",
+        "event_index": "15",
+        "screen_shoot": "screen_15.png"
+    },
+    {
+        "event": "BACK",
+        "event_index": "16",
+        "screen_shoot": "screen_16.png"
+    }
+]

@@ -1,0 +1,123 @@
+{
+  "tag": 12,
+  "state_str": "a13c1e8c762a8f0f01c2051d4dce20dd",
+  "state_str_content_free": "5a5825f603db955b871f9a5663cdc359",
+  "foreground_activity": "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses",
+  "activity_stack": [
+    "org.totschnig.myexpenses.debug/org.totschnig.myexpenses.activity.MyExpenses"
+  ],
+  "background_services": [
+    "android.ext.services/.notification.Assistant",
+    "com.android.systemui/.keyguard.KeyguardService",
+    "com.android.systemui/.ImageWallpaper",
+    "com.android.launcher3/.notification.NotificationListener",
+    "com.android.phone/com.android.internal.telephony.CellularNetworkService",
+    "com.android.networkstack/com.android.server.NetworkStackService",
+    "com.android.systemui/.SystemUIService",
+    "com.android.se/.SecureElementService",
+    "com.github.uiautomator/.AdbKeyboard",
+    "com.android.stk/.StkAppService",
+    "com.android.phone/com.android.internal.telephony.dataconnection.CellularDataService",
+    "com.android.service.ims/.RcsService",
+    "com.android.server.telecom/.components.TelecomService",
+    "com.android.launcher3/com.android.quickstep.TouchInteractionService",
+    "com.android.smspush/.WapPushManager",
+    "com.android.phone/.vvm.RemoteVvmTaskManager",
+    "com.android.location.fused/.FusedLocationService",
+    "com.android.ons/.OpportunisticNetworkService",
+    "com.android.mms.service/.MmsService",
+    "com.android.phone/.TelephonyDebugService"
+  ],
+  "width": 1080,
+  "height": 1920,
+  "views": [
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 1,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 0,
+      "content_description": null,
+      "children": [
+        1
+      ],
+      "focused": false,
+      "bounds": [
+        [
+          1033,
+          568
+        ],
+        [
+          1277,
+          714
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": null,
+      "class": "android.widget.FrameLayout",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 0,
+      "covered": false,
+      "parent": -1,
+      "temp_id": 0,
+      "size": "244*146",
+      "signature": "[class]android.widget.FrameLayout[resource_id]None[text]None[enabled,,]",
+      "view_str": "8e9bbbb814f5df0be45741492400c072",
+      "content_free_signature": "[class]android.widget.FrameLayout[resource_id]None"
+    },
+    {
+      "package": "org.totschnig.myexpenses.debug",
+      "visible": true,
+      "checkable": false,
+      "child_count": 0,
+      "editable": false,
+      "clickable": false,
+      "is_password": false,
+      "focusable": false,
+      "enabled": true,
+      "drawing-order": 1,
+      "content_description": null,
+      "children": [],
+      "focused": false,
+      "bounds": [
+        [
+          1033,
+          568
+        ],
+        [
+          1277,
+          714
+        ]
+      ],
+      "resource_id": null,
+      "checked": false,
+      "text": "Required",
+      "class": "android.widget.TextView",
+      "scrollable": false,
+      "selected": false,
+      "long_clickable": false,
+      "global_drawing_order": 1,
+      "covered": false,
+      "parent": 0,
+      "temp_id": 1,
+      "size": "244*146",
+      "signature": "[class]android.widget.TextView[resource_id]None[text]Required[enabled,,]",
+      "view_str": "311ef6b4d3c6826985df5970d00f615c",
+      "content_free_signature": "[class]android.widget.TextView[resource_id]None",
+      "allowed_actions": [
+        "touch"
+      ],
+      "special_attrs": [],
+      "local_id": "0",
+      "desc": "<p bound_box=1033,568,1277,714>Required</p>"
+    }
+  ]
+}
