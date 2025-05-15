@@ -1017,8 +1017,8 @@ class DeviceState(object):
         if cache_key in input_manager.view_descriptions_cache:
             return input_manager.view_descriptions_cache[cache_key]
 
-        gpt_url = "https://ai.liaobots.work/v1"
-        gpt_key = "wR3GWuNArwuKZ"
+        gpt_url = ""
+        gpt_key = ""
 
         for attempt in range(max_retries):
             try:
@@ -1111,8 +1111,8 @@ class DeviceState(object):
             print("unknown path\n")
             return "unknown"
 
-        gpt_url = "https://ai.liaobots.work/v1"
-        gpt_key = "wR3GWuNArwuKZ"
+        gpt_url = ""
+        gpt_key = ""
 
         for attempt in range(max_retries):
             try:

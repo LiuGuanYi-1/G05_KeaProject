@@ -1097,8 +1097,8 @@ class LLMPolicy(RandomPolicy):
 
     def _query_llm(self, prompt, model_name="gpt-4o"):
 
-        gpt_url = "https://ai.liaobots.work/v1"
-        gpt_key = "wR3GWuNArwuKZ"
+        gpt_url = ""
+        gpt_key = ""
         client = OpenAI(base_url=gpt_url, api_key=gpt_key)
 
         messages = [{"role": "user", "content": prompt}]
