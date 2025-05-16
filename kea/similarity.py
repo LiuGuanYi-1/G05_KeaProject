@@ -143,8 +143,8 @@ class Similarity(object):
         # 计算SSIM
         ssim_score = self.calculate_ssim(fileA, fileB)
 
-        # 设置权重，统计综合得分
-        similarity_score = 0.3 * dhash_score + 0.3 * phash_score + 0.4 * ssim_score
+        # 设置合适权重：0.8 ：0.2，统计综合得分
+        similarity_score = 0.4 * dhash_score + 0.4 * phash_score + 0.2 * ssim_score
 
         # OCR文本比对
         textA = self.extract_text(imgA)
